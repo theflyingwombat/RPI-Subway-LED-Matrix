@@ -312,9 +312,9 @@ class RunText(SampleBase):
             train_times2 = self.getTrainTimes("A32N", "A32S")
             if train_times2 == 'fail':
                 top_line2 = 'A'
-                top_line_time2 = '99'
+                top_line_time2 = 99
                 bottom_line2 = 'A'
-                bottom_line_time2 = '99'
+                bottom_line_time2 = 99
             else:
                 top_line2 = train_times2[0][0]
                 top_line_time2 = train_times2[1][0]
