@@ -388,6 +388,9 @@ class RunText(SampleBase):
 
             # sleep for 30 seconds before running again
             time.sleep(30)
+        
+        # Add delay when subways are down for maintenance or else we spam API
+        time.sleep(30)
 
 
 if __name__ == '__main__':
